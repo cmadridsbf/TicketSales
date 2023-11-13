@@ -1,0 +1,47 @@
+
+DB_HOST=localhost
+DB_USER=root
+DB_PASS=0007
+DB_NAME=devwebcamp
+
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^(www.)?ticketsales.store$
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /public/$1
+RewriteCond %{HTTP_HOST} ^(www.)?ticketsales.store$
+RewriteRule ^(/)?$ /public/index.php [L]
+Options +Indexes
+IndexOptions -FancyIndexing
+
+
+
+<a href="/registro" class="navegacion__enlace <?php echo pagina_actual('/registro') ? 'navegacion__enlace--actual' : ''; ?>">Comprar Pase</a>
+
+
+Business
+Sandbox URL
+    https://sandbox.paypal.com
+Email
+    sb-vxbbq15356370@business.example.com
+Password
+    6E"WXBw*
+
+
+
+Sandbox URL
+    https://sandbox.paypal.com
+Email
+    sb-gzrag27784495@personal.example.com
+Password
+    tVB1g<-K
+
+
+App name
+    TicketSales
+Client ID
+    Ab8X9_smcIWeJDWJu9O_fWn9lXKNbG9O5Hi6fX6SYFw0YNJj1eENWHLQ0bja5TXdUY9l8dSyHt852dnq
+Secret key 1
+    EAzlDqVmdth34kaabIkT8_0X8S-4QN3-so3tsP9k-4r-r8JjMX2I6Iwe9X8MbAWRQjconVVCoIB37VFm
