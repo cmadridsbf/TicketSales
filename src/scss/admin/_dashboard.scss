@@ -73,6 +73,21 @@
     &__icono {
         font-size: 2rem;
     }
+    &__contenedorBotonesReporte{
+            display: flex;          
+            min-height:40vh ;
+            width: 100%;
+            flex-direction: column; //-
+            align-items: center;
+            justify-content: space-around;
+            margin-top: 3%;
+        @include m.tablet {
+            flex-direction: row; 
+        }
+    }
+    // &__informebtn{
+    //     //width: 100% !important;
+    // }
     &__menu-texto {
         font-size: 1.1rem;
         text-transform: uppercase;
@@ -95,6 +110,7 @@
             justify-content: flex-end;
             margin-bottom: 5rem;
         }
+        
     }
     &__boton {
         @include m.boton(v.$azul, v.$blanco);
@@ -122,6 +138,14 @@
         @include m.contenedor-sm;
     }
     &__informe {
-        width: 15%;
+        min-width: 20%;
+        margin-top: 5%;
+        //min-height:  !important;
+    }
+    &__barra{
+        height: 20vh;
+        @include m.tablet {
+            min-height: 30vh;
+        }
     }
 }

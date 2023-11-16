@@ -1492,6 +1492,20 @@ h3 {
 .dashboard__icono {
   font-size: 2rem;
 }
+.dashboard__contenedorBotonesReporte {
+  display: flex;
+  min-height: 40vh;
+  width: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 3%;
+}
+@media (min-width: 768px) {
+  .dashboard__contenedorBotonesReporte {
+    flex-direction: row;
+  }
+}
 .dashboard__menu-texto {
   font-size: 1.1rem;
   text-transform: uppercase;
@@ -1555,7 +1569,16 @@ h3 {
   margin: 0 auto;
 }
 .dashboard__informe {
-  width: 15%;
+  min-width: 20%;
+  margin-top: 5%;
+}
+.dashboard__barra {
+  height: 20vh;
+}
+@media (min-width: 768px) {
+  .dashboard__barra {
+    min-height: 30vh;
+  }
 }
 
 .table {
