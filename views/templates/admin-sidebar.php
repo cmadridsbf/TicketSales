@@ -33,5 +33,11 @@
                 Regalos
             </span>    
         </a>
+        <a href="/admin/informes" class="dashboard__enlace <?php echo pagina_actual('/informes') ? 'dashboard__enlace--actual' : ''; ?> ">
+            <i class="fa-solid fa-print dashboard__icono"></i>
+            <span class="dashboard__menu-texto">
+                Informes
+            </span>    
+        </a>
     </nav>
 </aside>

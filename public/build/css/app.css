@@ -833,8 +833,8 @@ h3 {
   right: 0;
 }
 .boleto--presencial {
-  background-color: hsl(178deg, 100%, 39%);
-  background-image: radial-gradient(at 40% 20%, hsl(209deg, 100%, 47%) 0px, transparent 50%), radial-gradient(at 80% 0%, hsl(178deg, 100%, 39%) 0px, transparent 50%), radial-gradient(at 69% 82%, hsl(209deg, 100%, 47%) 0px, transparent 50%), radial-gradient(at 26% 91%, hsl(178deg, 100%, 39%) 0px, transparent 50%), radial-gradient(at 0% 100%, hsl(209deg, 100%, 47%) 0px, transparent 50%), radial-gradient(at 27% 22%, hsl(178deg, 100%, 39%) 0px, transparent 50%), radial-gradient(at 0% 0%, hsl(209deg, 100%, 47%) 0px, transparent 50%);
+  background-color: hsl(178, 100%, 39%);
+  background-image: radial-gradient(at 40% 20%, hsl(209, 100%, 47%) 0px, transparent 50%), radial-gradient(at 80% 0%, hsl(178, 100%, 39%) 0px, transparent 50%), radial-gradient(at 69% 82%, hsl(209, 100%, 47%) 0px, transparent 50%), radial-gradient(at 26% 91%, hsl(178, 100%, 39%) 0px, transparent 50%), radial-gradient(at 0% 100%, hsl(209, 100%, 47%) 0px, transparent 50%), radial-gradient(at 27% 22%, hsl(178, 100%, 39%) 0px, transparent 50%), radial-gradient(at 0% 0%, hsl(209, 100%, 47%) 0px, transparent 50%);
 }
 .boleto--virtual {
   background-color: #00c8c2;
@@ -1554,6 +1554,9 @@ h3 {
   width: min(95%, 60rem);
   margin: 0 auto;
 }
+.dashboard__informe {
+  width: 15%;
+}
 
 .table {
   width: 100%;
@@ -1769,7 +1772,6 @@ h3 {
 @media (min-width: 768px) {
   .registro {
     flex: 0 0 40%;
-    position: -webkit-sticky;
     position: sticky;
     top: 3rem;
   }

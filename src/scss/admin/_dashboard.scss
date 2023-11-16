@@ -121,4 +121,7 @@
     &__grafica {
         @include m.contenedor-sm;
     }
+    &__informe {
+        width: 15%;
+    }
 }

@@ -13,6 +13,7 @@ use Controllers\PonentesController;
 use Controllers\RegistroController;
 use Controllers\DashboardController;
 use Controllers\RegistradosController;
+use Controllers\InformesController;
 
 $router = new Router();
 
@@ -59,10 +60,12 @@ $router->get('/api/eventos-horario', [APIEventos::class, 'index']);
 $router->get('/api/ponentes', [APIPonentes::class, 'index']);
 $router->get('/api/ponente', [APIPonentes::class, 'ponente']);
 $router->get('/api/regalos', [APIRegalos::class, 'index']);
+$router->get('/api/informes', [APIRegalos::class, 'index']);
 
 $router->get('/admin/registrados', [RegistradosController::class, 'index']);
 
 $router->get('/admin/regalos', [RegalosController::class, 'index']);
+$router->get('/admin/informes', [InformesController::class, 'index']);
 
 // Registro de Usuarios
 $router->get('/finalizar-registro', [RegistroController::class, 'crear']);

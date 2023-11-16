@@ -5,3 +5,6 @@ import './slider.js';
 import './mapa.js';
 import './registro.js';
 import './regalos.js';
+import './informes.js';
+//import './jspdf.min.js';
+import './charts.js';
