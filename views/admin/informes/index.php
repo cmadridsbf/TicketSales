@@ -50,5 +50,12 @@ if (empty($_SESSION['id'])) {
                 Conferencias
         </button>
     </div>
+
+    <div class="dashboard__contenedor-boton">
+        <button id="rptBitácora" class="dashboard__boton dashboard__informebtn">
+            <i class="fa-solid fa-file"></i>
+                Bitácora
+        </button>
+    </div>
 </div>
 <!-- <h3 class="dashboard__heading">Graficos</h3> -->

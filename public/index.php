@@ -14,6 +14,7 @@ use Controllers\RegistroController;
 use Controllers\DashboardController;
 use Controllers\RegistradosController;
 use Controllers\InformesController;
+use Controllers\EscanerController;
 
 $router = new Router();
 
@@ -66,6 +67,7 @@ $router->get('/admin/registrados', [RegistradosController::class, 'index']);
 
 $router->get('/admin/regalos', [RegalosController::class, 'index']);
 $router->get('/admin/informes', [InformesController::class, 'index']);
+$router->get('/admin/escaner', [EscanerController::class, 'index']);
 
 // Registro de Usuarios
 $router->get('/finalizar-registro', [RegistroController::class, 'crear']);

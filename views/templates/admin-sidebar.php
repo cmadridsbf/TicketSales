@@ -39,5 +39,18 @@
                 Informes
             </span>    
         </a>
+        <a href="/admin/escaner" class="dashboard__enlace <?php echo pagina_actual('/escaner') ? 'dashboard__enlace--actual' : ''; ?> ">
+            <i class="fa-solid fa-qrcode dashboard__icono"></i>
+            <span class="dashboard__menu-texto">
+                Escáner
+            </span>    
+        </a>
+        
+        <a href="/admin/backup" class="dashboard__enlace <?php echo pagina_actual('/Copia_de_Seguridad') ? 'dashboard__enlace--actual' : ''; ?> ">
+            <i class="fa-solid fa-database dashboard__icono"></i>
+            <span class="dashboard__menu-texto">
+                Respaldo
+            </span>    
+        </a>
     </nav>
 </aside>
