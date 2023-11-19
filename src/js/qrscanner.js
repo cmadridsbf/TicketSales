@@ -1,4 +1,11 @@
 import { Html5QrcodeScanner } from "html5-qrcode";
+var urlCompleta = window.location.href;
+console.log('URL completa:', urlCompleta);
+
+if(urlCompleta == "http://localhost:3000/admin/escaner" || urlCompleta == "https://ticketsales.store/admin/escaner"){
+
+
+
 
 let html5QrcodeScanner;
 
@@ -144,3 +151,6 @@ document.getElementById('btnQr').addEventListener('click', function() {
         alert("No se ingresó ningún token.");
     }
 });
+
+
+}

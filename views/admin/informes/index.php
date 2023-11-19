@@ -52,7 +52,7 @@ if (empty($_SESSION['id'])) {
     </div>
 
     <div class="dashboard__contenedor-boton">
-        <button id="rptBitácora" class="dashboard__boton dashboard__informebtn">
+        <button id="rptBitacora" class="dashboard__boton dashboard__informebtn">
             <i class="fa-solid fa-file"></i>
                 Bitácora
         </button>

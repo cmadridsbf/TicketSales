@@ -20,6 +20,30 @@ document.getElementById('rptPonentes').addEventListener('click', function() {
 document.getElementById('rptConferencias').addEventListener('click', function() {
     obtenerConferencia();
 });
+document.getElementById('rptBitacora').addEventListener('click', function() {
+    const fechaInicio = prompt('Ingrese la Fecha Inicial (YYYY-MM-DD):');
+    const fechaFin = prompt('Ingrese la Fecha Final (YYYY-MM-DD):');
+
+    // Confirmación para el tipo de evento
+    const esPresencial = confirm('¿El evento es Presencial?');
+    const esVirtual = !esPresencial && confirm('¿El evento es Virtual?');
+    // Si no es ni presencial ni virtual, se asume que es gratis.
+
+    // Determinar el tipo de evento basado en las respuestas
+    let tipoEvento;
+    if (esPresencial) {
+        tipoEvento = 1; // Presencial
+    } else if (esVirtual) {
+        tipoEvento = 2; // Virtual
+    } else {
+        tipoEvento = 3; // Gratis
+    }
+
+    // Mostrar los resultados
+    alert(`Fecha Inicial: ${fechaInicio}\nFecha Final: ${fechaFin}\nTipo de Evento: ${tipoEvento}`);
+
+    //obtenerBitacora();
+});
 
 async function obtenerUsuarios() {
     try {
